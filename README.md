@@ -1,5 +1,15 @@
 # Icing-Food-printer
-Arduino - WPF C# 2D- GCode interpreter Food Printer 
+
+Group Project for Rose-Hulman Institution of Technology Operation Catapult
+
+
+Jake Zhang             Solon High School
+Jake Zuckerman        Dunlap High School
+Luke Cesario       	Downers Grove North High School
+Yiren Qu            Lyndon Institute
+
+
+Arduino - WPF C# 2D- GCode interpreter Food Printer
 
 
 Arduino code - please refer to the website https://www.marginallyclever.com/2013/08/how-to-build-an-2-axis-arduino-cnc-gcode-interpreter/
