@@ -1,0 +1,65 @@
+﻿<Window x:Class="arduino_drawing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:arduino_drawing"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="900"
+         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="131"/>
+            <ColumnDefinition Width="520"/>
+            <ColumnDefinition Width="149"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="55"/>
+            <RowDefinition Height="19"/>
+            <RowDefinition Height="278"/>
+            <RowDefinition Height="107"/>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Background="#FFA8D0FF" Grid.RowSpan="3" Margin="0,0,-79,274" >
+            <!--Icons-->
+            <Button Name="clear" Content="Clear" Width="70" HorizontalAlignment="Left" VerticalAlignment="Center" Height="30" Margin="10,5,0,0" Click="clear_Click" />
+            <Button Name="import" Content="Import" Width="90" HorizontalAlignment="Left" VerticalAlignment="Center" Height="30" Margin="10,5,0,0" Click="import_Click" />
+            <Button x:Name="print" Content="Print" Width="70"  HorizontalAlignment ="Left" VerticalAlignment="Center" Height="30" Margin="10,5,0,0" Click="print_Click"  />
+            <TextBlock Name="textBlock" Width="100" HorizontalAlignment ="Left" VerticalAlignment="Center" Height="30" Margin="10,5,0,0" TextAlignment="Center"/>
+            <TextBlock Text="Port #:" Margin="10,5,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+            <TextBox Name="portNumber" Width="100" Margin="0,5,0,0" HorizontalAlignment ="Left" VerticalAlignment="Center" Text="COM4" FontWeight="Bold" TextAlignment="Center"  />
+            <Button Name="load" Width="70" Margin="10,5,0,0" HorizontalAlignment ="Left" VerticalAlignment="Center" Content="Load" Click="load_Click"/>
+            <Button Name="reload" Width="80" Margin="10,5,0,0" HorizontalAlignment ="Left" VerticalAlignment="Center" Content="Reload" Click="reload_Click"/>
+            <TextBlock Text="X:" Margin="0,3,0,7" Width="8" />
+            <TextBox Name="Xpos"  Width="43" Margin="0,0,0,56" Height="30"/>
+            <TextBlock Text="Y:" />
+            <TextBox Name="Ypos" Width="40" Margin="0,0,0,56" Height="30" HorizontalAlignment="Left" />
+            <TextBlock Text="Servo power:" Margin="0,10,0,0" />
+
+
+
+
+
+
+
+
+        </DockPanel>
+        <TextBox Name="servopower" Grid.Column="2" Margin="150,35,-69,10" Grid.RowSpan="2"/>
+        <Button Name="MoveTo" Margin="51,44,10,0" Grid.Column="2" Grid.RowSpan="2" Content="Move To" Click="MoveTo_Click" />
+        <Canvas Grid.Column="1" Grid.Row="2" Name="canvas" Margin="10"/>
+        <TextBlock Grid.Row="2"  Name="ProgressNumber" TextAlignment="Center" Text="" Margin="63,37,262,92" FontSize="55" Foreground="#DDFF0000" FontFamily="Harlow Solid Italic" Grid.ColumnSpan="2"/>
+        <TextBlock Grid.Row="2"  Name="TimerRemain" TextAlignment="Center" Text="" Margin="10,168,121,31" Grid.ColumnSpan="2"  />
+        <ProgressBar  Grid.Column="1" Grid.Row="2" Name="ProgressBar" Margin="33,136,28,0" Visibility="Hidden" />
+        <Canvas  Grid.Column="1" Grid.Row="2" Name="printing" Grid.ColumnSpan="2" Margin="320,63,81,77"/>
+        <ScrollViewer Grid.Column="1" Grid.Row="3" Margin="0,0,0,-106" >
+            <TextBlock TextWrapping="Wrap" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Name="progress" Foreground="#DD000000" Width="Auto" MinWidth="100" MinHeight="50"  AllowDrop="True"/>
+
+
+        </ScrollViewer>
+
+
+    </Grid>
+</Window>

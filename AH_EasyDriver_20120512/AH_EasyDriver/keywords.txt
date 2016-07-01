@@ -1,0 +1,15 @@
+AH_EasyDriver 		KEYWORD1
+setSpeedRPM		KEYWORD2
+setSpeedHz		KEYWORD2
+setSpeedMax		KEYWORD2
+setMicrostepping 	KEYWORD2
+enableDriver		KEYWORD2
+disableDriver		KEYWORD2
+sleepON			KEYWORD2
+sleepOFF		KEYWORD2
+resetDriver		KEYWORD2
+move			KEYWORD2
+rotate			KEYWORD2
+revolve			KEYWORD2
+FORWARD			KEYWORD3
+BACKWARD		KEYWORD3
