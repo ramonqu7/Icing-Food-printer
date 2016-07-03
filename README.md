@@ -19,7 +19,17 @@ Command list:
 
 (If you use the arduino serial monitor, send any text first(do not starting with "S") then input your command or points.
 
-Command list
+Pancake painter setting:
+Flatten resolution 30  (can be modified)
+line end pre-shutoff distance: 1
+line start pump on wait time 0     - please change it in arduino
+line end pump off wait time 0
+fill line spacing in 20-40 recommended
+fill angle 23-45
+
+
+
+Command list:
 
 CH    - Home
 CS+number    - Rotate servo certain degree
