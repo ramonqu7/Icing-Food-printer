@@ -19,3 +19,6 @@ E:\arduino-drawing\arduino-drawing\bin\Debug\arduino-drawing.exe.manifest
 E:\arduino-drawing\arduino-drawing\bin\Debug\arduino-drawing.application
 E:\arduino-drawing\arduino-drawing\obj\Debug\arduino-drawing.exe.manifest
 E:\arduino-drawing\arduino-drawing\obj\Debug\arduino-drawing.application
+E:\github\Icing-Food-printer\arduino-drawing\bin\Debug\arduino-drawing.exe.config
+E:\github\Icing-Food-printer\arduino-drawing\obj\Debug\arduino-drawing.exe
+E:\github\Icing-Food-printer\arduino-drawing\obj\Debug\arduino-drawing.pdb
