@@ -1,12 +1,12 @@
 # Icing-Food-printer
 
 Group Project for Rose-Hulman Institution of Technology Operation Catapult
+[Full-TEXT PDF](http://ramonqu.azurewebsites.net/pdf/food_printer.pdf)
 
-
-Jake Zhang             Solon High School
-Jake Zuckerman        Dunlap High School
-Luke Cesario       	Downers Grove North High School
-Yiren Qu            Lyndon Institute
+- Jake Zhang             Solon High School
+- Jake Zuckerman        Dunlap High School
+- Luke Cesario       	Downers Grove North High School
+- Yiren Qu            Lyndon Institute
 
 
 Arduino - WPF C# 2D- GCode interpreter Food Printer
